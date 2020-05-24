@@ -1,0 +1,70 @@
+Declare,metatab-latest
+Title,State and County COVID-19 Cases
+Description,State and country observations from the Covid Tracking Project
+Identifier,4a7a679b-0394-4401-be47-26de222a733f
+Name,covidtracking.com-covid19-3.1.41
+Dataset,covid19
+Origin,covidtracking.com
+Time,
+Space,
+Grain,
+Variant,
+Version,3.1.41
+Version.Major,3
+Version.Minor,1
+Version.Patch,41
+Created,2020-03-22T18:42:48
+Modified,2020-05-18T15:02:18
+Updatefrequency,P1D
+Giturl,https://github.com/sandiegodata/covid19.git
+""
+Section,Contacts,Email,Organization,Url,
+Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com,
+""
+Section,Documentation,Title,Description,,
+Documentation,file:README.md,README,,,
+Homepage,https://covidtracking.com/,Homepage,,,
+Note,Version 2.x.x: Upstream added 'hash' columns,,,,
+Note,Version 3.x.x: Upstream added Currently and Cumulative fields,,,,
+""
+Section,References,Name,Description,,
+""
+Section,Resources,Name,Description,,
+Datafile,http://covidtracking.com/api/states/daily.csv,states,"Cumulative cases, deaths, hospitalizations, etc for  US states",,
+Datafile,https://covidtracking.com/api/counties.csv,counties,"Cumulative cases, deaths, hospitalizations, etc for  US counties",,
+""
+Section,Schema,DataType,AltName,Description,Has_Codes
+Table,counties,,,,
+Table.Column,state,string,,,
+Table.Column,county,string,,,
+Table.Column,covid19Site,string,covid19site,,
+Table.Column,dataSite,unknown,datasite,,
+Table.Column,mainSite,string,mainsite,,
+Table.Column,twitter,unknown,,,
+Table.Column,pui,string,,,
+Table,states,,,,
+Table.Column,date,integer,,,
+Table.Column,state,string,,,
+Table.Column,positive,integer,,,
+Table.Column,negative,integer,,,
+Table.Column,pending,integer,,,
+Table.Column,hospitalizedCurrently,integer,hospitalizedcurrently,,
+Table.Column,hospitalizedCumulative,integer,hospitalizedcumulative,,
+Table.Column,inIcuCurrently,integer,inicucurrently,,
+Table.Column,inIcuCumulative,integer,inicucumulative,,
+Table.Column,onVentilatorCurrently,integer,onventilatorcurrently,,
+Table.Column,onVentilatorCumulative,integer,onventilatorcumulative,,
+Table.Column,recovered,integer,,,
+Table.Column,hash,string,,,
+Table.Column,dateChecked,datetime,datechecked,,
+Table.Column,death,integer,,,
+Table.Column,hospitalized,integer,,,
+Table.Column,total,integer,,,
+Table.Column,totalTestResults,integer,totaltestresults,,
+Table.Column,posNeg,integer,posneg,,
+Table.Column,fips,integer,,,
+Table.Column,deathIncrease,integer,deathincrease,,
+Table.Column,hospitalizedIncrease,integer,hospitalizedincrease,,
+Table.Column,negativeIncrease,integer,negativeincrease,,
+Table.Column,positiveIncrease,integer,positiveincrease,,
+Table.Column,totalTestResultsIncrease,integer,totaltestresultsincrease,,
