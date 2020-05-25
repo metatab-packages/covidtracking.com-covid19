@@ -2,19 +2,19 @@ Declare,metatab-latest
 Title,State and County COVID-19 Cases
 Description,State and country observations from the Covid Tracking Project
 Identifier,4a7a679b-0394-4401-be47-26de222a733f
-Name,covidtracking.com-covid19-3.1.41
+Name,covidtracking.com-covid19-3.1.42
 Dataset,covid19
 Origin,covidtracking.com
 Time,
 Space,
 Grain,
 Variant,
-Version,3.1.41
+Version,3.1.42
 Version.Major,3
 Version.Minor,1
-Version.Patch,41
+Version.Patch,42
 Created,2020-03-22T18:42:48
-Modified,2020-05-18T15:02:18
+Modified,2020-05-25T20:36:16
 Updatefrequency,P1D
 Giturl,https://github.com/sandiegodata/covid19.git
 ""
